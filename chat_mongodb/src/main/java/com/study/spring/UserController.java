@@ -14,7 +14,7 @@ public class UserController {
 	
 	@PostMapping("/user")
 	public ResponseEntity<String> createUser(@RequestBody User user) {
-		userRepository.save(user);
-		return ResponseEntity.ok("user successfully created");
+		User savedUser = userRepository.save(user);
+		return ResponseEntity.ok(savedUser.toString());
 	}
 }
