@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.data.annotation.Id;
 
+// store everything other than ChatMessage in mysql
 public class ChatRoom {
 	@Id
 	private Long id;

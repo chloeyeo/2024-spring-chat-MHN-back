@@ -6,11 +6,7 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class ChatService {
+public class ChatMessageService {
 	private final ChatRoomRepository chatRoomRepository;
 	private final ChatMessageRepository chatMessageRepository;
-	
-	public ChatRoom createChatRoom(ChatRoom chatRoom) {
-		return chatRoomRepository.save(chatRoom);
-	}
 }
