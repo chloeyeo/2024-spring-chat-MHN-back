@@ -19,7 +19,9 @@ import lombok.NoArgsConstructor;
 public class ChatMessage {
 	@Id
 	private Long id;
-	private Long chatRoomId; // Reference to the ChatRoom ID
+	private String chatId;
+	private Long senderId;
+	private Long recipientId;
 	private String content;
 	private ZonedDateTime createdAt;
 }

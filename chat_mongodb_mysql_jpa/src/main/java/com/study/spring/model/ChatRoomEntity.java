@@ -23,7 +23,8 @@ public class ChatRoomEntity {// store everything other than ChatMessage in mysql
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String senderEmail;
-	private String receiverEmail;
+	private String chatId;
+	private Long senderId;
+	private Long recipientId;
 	private List<Long> messageIds; // References to ChatMessage IDs
 }
