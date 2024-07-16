@@ -6,10 +6,10 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 @EnableMongoRepositories
-public class ChatMongodbApplication {
+public class ChatMongodbMysqlJpaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ChatMongodbApplication.class, args);
+		SpringApplication.run(ChatMongodbMysqlJpaApplication.class, args);
 	}
 
 }

@@ -1,6 +1,9 @@
-package com.study.spring;
+package com.study.spring.service;
 
 import org.springframework.stereotype.Service;
+
+import com.study.spring.repository.ChatMessageRepository;
+import com.study.spring.repository.ChatRoomRepository;
 
 import lombok.RequiredArgsConstructor;
 
